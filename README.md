@@ -37,3 +37,9 @@ O projeto é composto por:
 1. **Clone o Repositório**: Copie o link do repositório no GitHub e use o comando `git clone` para clonar o projeto para o seu ambiente local.
 2. **Abra o Arquivo HTML**: Navegue até o diretório do projeto e abra o arquivo `index.html` em qualquer navegador para visualizar o site.
 
+### Segue em anexo algumas capturas de telas:
+![image](https://github.com/user-attachments/assets/fcb2a406-4470-4835-8d05-13b3fba9a22b)
+![image](https://github.com/user-attachments/assets/ed10e938-abcf-4879-8dd5-b0da117cd5df)
+![image](https://github.com/user-attachments/assets/24ea164a-4801-4e2e-8b89-2761df1cf761)
+![image](https://github.com/user-attachments/assets/17b71493-01d4-4398-bded-5c56103788d4)
+![image](https://github.com/user-attachments/assets/dd4df44d-af1b-4256-9f32-ffed6b325991)
