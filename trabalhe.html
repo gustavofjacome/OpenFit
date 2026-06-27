@@ -1,34 +1,35 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css"/>
-    <title>Trabalhe Conosco | OpenFit</title>
+    <title data-i18n="work_page_title">Work With Us | OpenFit</title>
 </head>
 
 <body>
-    <header style="background-image: url(img/conosco.jpg);">
+    <header class="inner-page" style="background-image: url(img/conosco.jpg);">
         <div class="container">
             <nav>
                 <a href="index.html">
                     <img src="img/logo principal png.png" alt="Logo">
                 </a>
                 <ul class="ul">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="sobre.html">Sobre</a></li>
-                    <li><a href="servicos.html">Serviços</a></li>
-                    <li><a href="trabalhe.html">Trabalhe Conosco</a></li>
-                    <li><a class="btn" href="contato.html">Contato</a></li>
+                    <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+                    <li><a href="sobre.html" data-i18n="nav_about">About</a></li>
+                    <li><a href="servicos.html" data-i18n="nav_services">Services</a></li>
+                    <li><a href="trabalhe.html" data-i18n="nav_work">Work With Us</a></li>
+                    <li><a class="nav-contact" href="contato.html" data-i18n="nav_contact">Contact</a></li>
+                    <li><button id="lang-toggle" onclick="toggleLanguage()">PT</button></li>
                 </ul>
-                <div class="menu-icon"></div>
+                <div class="menu-icon"><i class="fa-solid fa-bars"></i></div>
             </nav>
             <section class="banner">
                 <div class="banner-text">
-                    <h1>Trabalhe Conosco</h1>
-                    <p>
-                    Explore as oportunidades disponíveis e venha fazer parte da nossa equipe dedicada a promover saúde e bem-estar. Junte-se a nós na OpenFit e contribua para transformar vidas através de alimentação saudável.
+                    <h1 data-i18n="work_title">Work With Us</h1>
+                    <p data-i18n="work_text">
+                    Explore available opportunities and come be part of our team dedicated to promoting health and wellness. Join us at OpenFit and help transform lives through healthy eating.
                     </p>
                 </div>
             </section>
@@ -37,49 +38,49 @@
     
     <section class="vagas">
         <div class="container">
-            <h2>Cargos e Funções Disponíveis</h2>
+            <h2 data-i18n="work_section_title">Available Positions</h2>
             
             <div class="vaga">
-                <h3>Assistente de Cozinha</h3>
+                <h3 data-i18n="work_job_1_title">Kitchen Assistant</h3>
                 <ul>
-                    <li><strong>Atividades:</strong> Responsável por realizar tarefas de preparo de alimentos, conforme orientação do cozinheiro, cuidando da higienização do local de trabalho, recebendo e armazenando gêneros alimentícios.</li>
-                    <li><strong>Formação/Educação:</strong> Mínimo – Ensino Médio.</li>
-                    <li><strong>Treinamentos/Conhecimentos:</strong> Dominar os processos culinários.</li>
-                    <li><strong>Experiência:</strong> Experiência mínima de 6 meses.</li>
-                    <li><strong>Habilidades:</strong> Atenção, capacidade de trabalhar sob pressão, habilidade com diversos instrumentos de cozinha, especialmente facas, boa memória, senso de higiene, habilidade para realizar múltiplas tarefas simultaneamente.</li>
+                    <li data-i18n="work_job_1_activities">Activities: Responsible for performing food preparation tasks, as guided by the cook, ensuring the hygiene of the workplace, receiving and storing food supplies.</li>
+                    <li data-i18n="work_job_1_education">Education: Minimum – High School.</li>
+                    <li data-i18n="work_job_1_training">Training/Knowledge: Mastery of culinary processes.</li>
+                    <li data-i18n="work_job_1_experience">Experience: Minimum 6 months.</li>
+                    <li data-i18n="work_job_1_skills">Skills: Attention, ability to work under pressure, skill with various kitchen tools (especially knives), good memory, sense of hygiene, ability to multitask simultaneously.</li>
                 </ul>
             </div>
     
             <div class="vaga">
-                <h3>Auxiliar de Cozinha</h3>
+                <h3 data-i18n="work_job_2_title">Kitchen Helper</h3>
                 <ul>
-                    <li><strong>Atividades:</strong> Responsável pelo pré-preparo, higienização, organização e pequenas produções de alimentos nos vários setores da cozinha. Auxiliar na cozinha, lavar, descascar, cortar e ralar alimentos sob orientação do cozinheiro.</li>
-                    <li><strong>Formação/Educação:</strong> Mínimo – Ensino Médio.</li>
-                    <li><strong>Treinamentos/Conhecimentos:</strong> Conhecimentos básicos em culinária.</li>
-                    <li><strong>Experiência:</strong> Não exigida.</li>
-                    <li><strong>Habilidades:</strong> Responsabilidade, organização, cuidado, habilidade no manuseio de facas e outros objetos cortantes, atenção e método.</li>
+                    <li data-i18n="work_job_2_activities">Activities: Responsible for pre-preparation, hygiene, organization, and small food productions in various kitchen sectors. Assist in the kitchen, washing, peeling, cutting, and grating food under the cook's guidance.</li>
+                    <li data-i18n="work_job_2_education">Education: Minimum – High School.</li>
+                    <li data-i18n="work_job_2_training">Training/Knowledge: Basic culinary knowledge.</li>
+                    <li data-i18n="work_job_2_experience">Experience: Not required.</li>
+                    <li data-i18n="work_job_2_skills">Skills: Responsibility, organization, care, skill in handling knives and other sharp objects, attention, and method.</li>
                 </ul>
             </div>
     
             <div class="vaga">
-                <h3>Atendente</h3>
+                <h3 data-i18n="work_job_3_title">Attendant</h3>
                 <ul>
-                    <li><strong>Atividades:</strong> Atuar com atendimento ao cliente, recepcionar, apresentar o cardápio, realizar a organização de prateleiras, estocagem e organização do local. Fazer a recepção de mercadorias e esclarecer possíveis dúvidas. Zelar pelo bom atendimento, eficiência e produtividade.</li>
-                    <li><strong>Formação/Educação:</strong> Mínimo – Ensino Médio.</li>
-                    <li><strong>Treinamentos/Conhecimentos:</strong> Capacidade de negociação e persuasão.</li>
-                    <li><strong>Experiência:</strong> Experiência mínima de 6 meses.</li>
-                    <li><strong>Habilidades:</strong> Boa comunicação, flexibilidade, resiliência, capacidade para resolução de problemas, empatia, controle emocional, postura positiva e otimista, ética no trabalho.</li>
+                    <li data-i18n="work_job_3_activities">Activities: Customer service, reception, presenting the menu, organizing shelves, stocking, and organizing the premises. Receiving goods and clarifying possible doubts. Ensuring good service, efficiency, and productivity.</li>
+                    <li data-i18n="work_job_3_education">Education: Minimum – High School.</li>
+                    <li data-i18n="work_job_3_training">Training/Knowledge: Negotiation and persuasion skills.</li>
+                    <li data-i18n="work_job_3_experience">Experience: Minimum 6 months.</li>
+                    <li data-i18n="work_job_3_skills">Skills: Good communication, flexibility, resilience, problem-solving ability, empathy, emotional control, positive and optimistic attitude, work ethics.</li>
                 </ul>
             </div>
     
             <div class="vaga">
-                <h3>Motoboy</h3>
+                <h3 data-i18n="work_job_4_title">Delivery Driver</h3>
                 <ul>
-                    <li><strong>Atividades:</strong> Preparar cargas, descargas de mercadorias e realizar a entrega dos pedidos aos clientes.</li>
-                    <li><strong>Formação/Educação:</strong> Mínimo – Ensino Médio.</li>
-                    <li><strong>Treinamentos/Conhecimentos:</strong> Carteira de habilitação tipo A.</li>
-                    <li><strong>Experiência:</strong> Experiência mínima de 12 meses.</li>
-                    <li><strong>Habilidades:</strong> Habilidades de direção, organização, cordialidade, pontualidade, proatividade e responsabilidade.</li>
+                    <li data-i18n="work_job_4_activities">Activities: Prepare loads, unload goods, and deliver orders to customers.</li>
+                    <li data-i18n="work_job_4_education">Education: Minimum – High School.</li>
+                    <li data-i18n="work_job_4_training">Training/Knowledge: Type A driver's license.</li>
+                    <li data-i18n="work_job_4_experience">Experience: Minimum 12 months.</li>
+                    <li data-i18n="work_job_4_skills">Skills: Driving skills, organization, cordiality, punctuality, proactivity, and responsibility.</li>
                 </ul>
             </div>
         </div>
@@ -87,41 +88,40 @@
     
     <section class="formulario-candidatura">
         <div class="container">
-            <h2>Candidate-se</h2>
+            <h2 data-i18n="work_form_title">Apply</h2>
             <form action="#" method="POST">
                 <div class="input-group">
-                    <label for="nome">Nome Completo:</label>
+                    <label for="nome" data-i18n="work_form_name">Full Name:</label>
                     <input type="text" id="nome" name="nome" required>
                 </div>
                 <div class="input-group">
-                    <label for="email">Email:</label>
+                    <label for="email" data-i18n="work_form_email">Email:</label>
                     <input type="email" id="email" name="email" required>
                 </div>
                 <div class="input-group">
-                    <label for="telefone">Telefone:</label>
+                    <label for="telefone" data-i18n="work_form_phone">Phone:</label>
                     <input type="tel" id="telefone" name="telefone" required>
                 </div>
                 <div class="input-group">
-                    <label for="vaga">Vaga de Interesse:</label>
+                    <label for="vaga" data-i18n="work_form_position">Position of Interest:</label>
                     <select id="vaga" name="vaga" required>
-                        <option value="">Selecione uma vaga</option>
-                        <option value="assistente-cozinha">Assistente de Cozinha</option>
-                        <option value="auxiliar-cozinha">Auxiliar de Cozinha</option>
-                        <option value="atendente">Atendente</option>
-                        <option value="motoboy">Motoboy</option>
+                        <option value="" data-i18n="work_form_select">Select a position</option>
+                        <option value="assistente-cozinha" data-i18n="work_form_option_1">Kitchen Assistant</option>
+                        <option value="auxiliar-cozinha" data-i18n="work_form_option_2">Kitchen Helper</option>
+                        <option value="atendente" data-i18n="work_form_option_3">Attendant</option>
+                        <option value="motoboy" data-i18n="work_form_option_4">Delivery Driver</option>
                     </select>
                 </div>
                 <div class="input-group">
-                    <label for="curriculo">Anexe seu Currículo:</label>
+                    <label for="curriculo" data-i18n="work_form_resume">Attach your Resume:</label>
                     <input type="file" id="curriculo" name="curriculo" required>
                 </div>
-                <button type="submit" class="btn-enviar">Enviar Candidatura</button>
+                <button type="submit" class="btn-enviar" data-i18n="work_form_submit">Submit Application</button>
             </form>
         </div>
     </section>
     
 
-    <!-- Rodapé -->
     <footer class="footer">
         <div class="container">
             <div class="links">
@@ -129,9 +129,10 @@
                 <a href="https://github.com/gustavofjacome"><i class="fa-brands fa-github"></i></a>
                 <a href="https://www.linkedin.com/in/gustavofjacome"><i class="fa-brands fa-linkedin"></i></a>
             </div>
-            <p>Desenvolvido por Gustavo Jácome</p>
+            <p data-i18n="footer_credit">Developed by Gustavo Jácome</p>
         </div>
     </footer>
     
+    <script src="js/translations.js"></script>
 </body>
 </html>

@@ -1,32 +1,33 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css"/>
-    <title>Sobre | OpenFit</title>
+    <title data-i18n="about_page_title">About | OpenFit</title>
 </head>
 
 <body>
-    <header style="background-image: url(img/sobre.jpg);">
+    <header class="inner-page" style="background-image: url(img/sobre.jpg);">
         <div class="container">
             <nav>
                 <a href="index.html">
                     <img src="img/logo principal png.png" alt="Logo">
                 </a>
                 <ul class="ul">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="sobre.html">Sobre</a></li>
-                    <li><a href="servicos.html">Serviços</a></li>
-                    <li><a href="trabalhe.html">Trabalhe Conosco</a></li>
-                    <li><a class="btn" href="contato.html">Contato</a></li>
+                    <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+                    <li><a href="sobre.html" data-i18n="nav_about">About</a></li>
+                    <li><a href="servicos.html" data-i18n="nav_services">Services</a></li>
+                    <li><a href="trabalhe.html" data-i18n="nav_work">Work With Us</a></li>
+                    <li><a class="nav-contact" href="contato.html" data-i18n="nav_contact">Contact</a></li>
+                    <li><button id="lang-toggle" onclick="toggleLanguage()">PT</button></li>
                 </ul>
-                <div class="menu-icon"></div>
+                <div class="menu-icon"><i class="fa-solid fa-bars"></i></div>
             </nav>
             <section class="banner">
                 <div class="banner-text">
-                    <h1>Sobre</h1>
+                    <h1 data-i18n="about_title">About</h1>
                 </div>
             </section>
         </div>
@@ -34,72 +35,64 @@
     <section class="sobre">
         <div class="container">
             <div class="content-block">
-                <h2>Quem Somos</h2>
-                <p>A OpenFit é uma empresa localizada em Natal/RN, especializada na produção e entrega de marmitas fitness. Nosso objetivo é atender à crescente demanda por refeições práticas, saudáveis e equilibradas, especialmente para aqueles que desejam manter uma alimentação de qualidade, mas não têm tempo para cozinhar. A OpenFit oferece opções de refeições personalizadas, atendendo às preferências de onívoros, vegetarianos e veganos.</p>
+                <h2 data-i18n="about_who_title">Who We Are</h2>
+                <p data-i18n="about_who_text">OpenFit is a company located in Natal/RN, specialized in the production and delivery of fitness meals. Our goal is to meet the growing demand for practical, healthy, and balanced meals, especially for those who want to maintain quality nutrition but don't have time to cook. OpenFit offers personalized meal options, catering to the preferences of omnivores, vegetarians, and vegans.</p>
             </div>
 
-            <!-- Missão -->
             <div class="content-block">
-                <h2>Missão</h2>
-                <p>Fornecer opções de refeição fitness de forma prática, conveniente e sustentável, ajudando nossos clientes a manter uma alimentação equilibrada e a alcançar seus objetivos de saúde.</p>
+                <h2 data-i18n="about_mission_title">Mission</h2>
+                <p data-i18n="about_mission_text">To provide practical, convenient, and sustainable fitness meal options, helping our clients maintain a balanced diet and achieve their health goals.</p>
             </div>
 
-            <!-- Visão -->
             <div class="content-block">
-                <h2>Visão</h2>
-                <p>Ser uma marca relevante na fabricação de alimentos saudáveis, valorizando a saúde e o bem-estar dos nossos consumidores.</p>
+                <h2 data-i18n="about_vision_title">Vision</h2>
+                <p data-i18n="about_vision_text">To be a relevant brand in healthy food manufacturing, valuing the health and well-being of our consumers.</p>
             </div>
 
-            <!-- Valores -->
             <div class="content-block">
-                <h2>Valores</h2>
+                <h2 data-i18n="about_values_title">Values</h2>
                 <ul>
-                    <li>Transparência</li>
-                    <li>Zelo</li>
-                    <li>Qualidade</li>
-                    <li>Inovação</li>
-                    <li>Confiança</li>
+                    <li data-i18n="about_value_1">Transparency</li>
+                    <li data-i18n="about_value_2">Care</li>
+                    <li data-i18n="about_value_3">Quality</li>
+                    <li data-i18n="about_value_4">Innovation</li>
+                    <li data-i18n="about_value_5">Trust</li>
                 </ul>
             </div>
 
-            <!-- Oportunidade de Negócio -->
             <div class="content-block">
-                <h2>Oportunidade de Negócio</h2>
-                <p>Com o aumento da conscientização sobre saúde e bem-estar, bem como a popularidade do trabalho remoto e do treino em casa, a demanda por opções de alimentação saudável e prática cresceu significativamente. A OpenFit se diferencia por oferecer marmitas personalizadas que atendem às necessidades nutricionais específicas de cada cliente, ampliando assim sua base de consumidores.</p>
+                <h2 data-i18n="about_opportunity_title">Business Opportunity</h2>
+                <p data-i18n="about_opportunity_text">With increased awareness about health and wellness, as well as the popularity of remote work and home workouts, the demand for healthy and practical food options has grown significantly. OpenFit differentiates itself by offering personalized meals that meet each client's specific nutritional needs, thus expanding its consumer base.</p>
             </div>
 
-            <!-- Projeção Financeira -->
             <div class="content-block">
-                <h2>Projeção Financeira</h2>
+                <h2 data-i18n="about_financial_title">Financial Projection</h2>
                 <ul>
-                    <li>Receita Bruta Mensal: <strong>R$ 48.960,00</strong></li>
-                    <li>Receita Bruta Anual: <strong>R$ 587.520,00</strong></li>
-                    <li>Lucro Líquido Mensal: <strong>R$ 8.206,86</strong></li>
-                    <li>Lucro Líquido Anual: <strong>R$ 98.482,27</strong></li>
-                    <li>Estimativa de Retorno do Investimento: <strong>16 meses</strong></li>
+                    <li><span data-i18n="about_financial_1">Monthly Gross Revenue: </span><strong>R$ 48,960.00</strong></li>
+                    <li><span data-i18n="about_financial_2">Annual Gross Revenue: </span><strong>R$ 587,520.00</strong></li>
+                    <li><span data-i18n="about_financial_3">Monthly Net Profit: </span><strong>R$ 8,206.86</strong></li>
+                    <li><span data-i18n="about_financial_4">Annual Net Profit: </span><strong>R$ 98,482.27</strong></li>
+                    <li><span data-i18n="about_financial_5">Estimated Return on Investment: </span><strong>16 months</strong></li>
                 </ul>
             </div>
 
-            <!-- Capacidade Produtiva -->
             <div class="content-block">
-                <h2>Capacidade Produtiva</h2>
+                <h2 data-i18n="about_capacity_title">Production Capacity</h2>
                 <p>
-                    Capacidade Instalada: <strong>960 marmitas/dia</strong><br>
-                    Capacidade Disponível: <strong>480 marmitas/dia</strong><br>
-                    Capacidade Efetiva: <strong>446 marmitas/dia</strong><br>
-                    Capacidade Realizada: <strong>443 marmitas/dia</strong>
+                    <span data-i18n="about_capacity_installed">Installed Capacity: </span><strong>960 meals/day</strong><br>
+                    <span data-i18n="about_capacity_available">Available Capacity: </span><strong>480 meals/day</strong><br>
+                    <span data-i18n="about_capacity_effective">Effective Capacity: </span><strong>446 meals/day</strong><br>
+                    <span data-i18n="about_capacity_realized">Realized Capacity: </span><strong>443 meals/day</strong>
                 </p>
             </div>
 
-            <!-- Sócios -->
             <div class="content-block">
-                <h2>Sócios</h2>
-                <p>Alice Beatriz, Gabriela Gurgel, Gustavo Jácome, Pedro Lucas</p>
+                <h2 data-i18n="about_partners_title">Partners</h2>
+                <p data-i18n="about_partners_text">Alice Beatriz, Gabriela Gurgel, Gustavo Jácome, Pedro Lucas</p>
             </div>
         </div>
     </section>
     
-   <!--Rodapé-->
    <footer class="footer">
         <div class="container">
             <div class="links">
@@ -107,12 +100,12 @@
                 <a href="https://github.com/gustavofjacome"><i class="fa-brands fa-github"></i></a>
                 <a href="https://www.linkedin.com/in/gustavofjacome"><i class="fa-brands fa-linkedin"></i></a>
             </div>
-            <p>Desenvolvido por Gustavo Jácome</p>
+            <p data-i18n="footer_credit">Developed by Gustavo Jácome</p>
 
         </div>
 
    </footer>
-   <!--FIM Rodapé-->
-       
+        
+   <script src="js/translations.js"></script>
 </body>
 </html>

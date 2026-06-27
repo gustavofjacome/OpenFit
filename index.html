@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,19 +16,20 @@
                     <img src="img/logo principal png.png" alt="Logo">
                 </a>
                 <ul class="ul">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="sobre.html">Sobre</a></li>
-                    <li><a href="servicos.html">Serviços</a></li>
-                    <li><a href="trabalhe.html">Trabalhe Conosco</a></li>
-                    <li><a class="btn" href="contato.html">Contato</a></li>
+                    <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+                    <li><a href="sobre.html" data-i18n="nav_about">About</a></li>
+                    <li><a href="servicos.html" data-i18n="nav_services">Services</a></li>
+                    <li><a href="trabalhe.html" data-i18n="nav_work">Work With Us</a></li>
+                    <li><a class="nav-contact" href="contato.html" data-i18n="nav_contact">Contact</a></li>
+                    <li><button id="lang-toggle" onclick="toggleLanguage()">PT</button></li>
                 </ul>
-                <div class="menu-icon"></div>
+                <div class="menu-icon"><i class="fa-solid fa-bars"></i></div>
             </nav>
             <section class="banner">
                 <div class="banner-text">
                     <h1>OpenFit</h1>
-                    <p>Bem-vindos à nossa marmitaria</p>
-                    <a href="contato.html" class="btn">Entrar em contato</a>
+                    <p data-i18n="index_banner_subtitle">Welcome to our meal prep kitchen</p>
+                    <a href="contato.html" class="btn" data-i18n="index_banner_btn">Get in touch</a>
                 </div>
             </section>
         </div>
@@ -37,53 +38,51 @@
     <section class="faca-mais">
         <div class="container">
             <div class="faca-mais-text">
-                <h3>Faça mais com OpenFit</h3>
-                <p>
-                    Somos uma marmitaria com foco no público fitness, especialmente para aqueles que não têm tempo ou aptidão para cozinhar as próprias refeições.
+                <h3 data-i18n="index_do_more_title">Do more with OpenFit</h3>
+                <p data-i18n="index_do_more_text">
+                    We are a meal prep service focused on the fitness audience, especially for those who don't have the time or skill to cook their own meals.
                 </p>
-                <a href="contato.html" class="btn animate-btn">Entrar em contato</a>
+                <a href="contato.html" class="btn animate-btn" data-i18n="index_banner_btn">Get in touch</a>
             </div>
             <div class="faca-mais-img">
-                <img src="img/chef.jpg" alt="Chef cozinhando">
+                <img src="img/chef.jpg" alt="Chef cooking">
             </div>
         </div>
     </section>
     <section class="produtos">
         <div class="container">
-            <h3>Nossos Planos</h3>
+            <h3 data-i18n="index_plans_title">Our Plans</h3>
             <div class="plano">
                 <div class="plano-card">
-                    <img src="img/diario.png" alt="Plano Diário">
-                    <h4>Plano Diário</h4>
+                    <img src="img/diario.png" alt="Daily Plan">
+                    <h4 data-i18n="index_plan_daily">Daily Plan</h4>
                     <p><strong>R$ 20,00</strong></p>
-                    <p>Refeição produzida no dia.</p>
+                    <p data-i18n="index_plan_daily_desc">Meal produced on the day.</p>
                 </div>
                 <div class="plano-card">
-                    <img src="img/semanal.png" alt="Plano Semanal">
-                    <h4>Plano Semanal</h4>
+                    <img src="img/semanal.png" alt="Weekly Plan">
+                    <h4 data-i18n="index_plan_weekly">Weekly Plan</h4>
                     <p><strong>R$ 90,00</strong></p>
-                    <p>5 marmitas para a semana.</p>
+                    <p data-i18n="index_plan_weekly_desc">5 meals for the week.</p>
                 </div>
                 <div class="plano-card">
-                    <img src="img/mensal.png" alt="Plano Mensal"> 
-                    <h4>Plano Mensal</h4>
+                    <img src="img/mensal.png" alt="Monthly Plan"> 
+                    <h4 data-i18n="index_plan_monthly">Monthly Plan</h4>
                     <p><strong>R$ 324,00</strong></p>
-                    <p>20 marmitas para o mês.</p>
+                    <p data-i18n="index_plan_monthly_desc">20 meals for the month.</p>
                 </div>
             </div>
         </div>
     </section>
     <section class="depoimentos">
         <div class="container">
-            <h3>Nossos Depoimentos</h3>
-            <p>Veja o que nossos clientes falam de nós para o mundo</p>
+            <h3 data-i18n="index_testimonials_title">Our Testimonials</h3>
+            <p data-i18n="index_testimonials_subtitle">See what our clients say about us to the world</p>
             <div class="cards">
-                <!-- Primeiro card-->
                 <div class="card-item">
                     <img src="img/ana-beatriz-perfil.jpg" alt="Ana Beatriz">
-                    <p class="nome-user">Ana Beatriz, 28 anos, Personal Trainer</p>
-                    <p class="depoimento-user">A OpenFit salvou minha rotina! Como alguém que treina diariamente e trabalha em tempo integral, encontrar refeições saudáveis e equilibradas era um desafio. Agora, recebo minhas marmitas fresquinhas todos os dias e com a certeza de que estou me alimentando de forma nutritiva.
-                    </p>
+                    <p class="nome-user" data-i18n="index_testimonial_1_name">Ana Beatriz, 28 years old, Personal Trainer</p>
+                    <p class="depoimento-user" data-i18n="index_testimonial_1_text">OpenFit saved my routine! As someone who trains daily and works full time, finding healthy and balanced meals was a challenge. Now I receive my fresh meals every day knowing I am eating nutritiously.</p>
                     <div class="estrela">
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
@@ -92,14 +91,11 @@
                         <i class="fa-solid fa-star-half"></i>
                     </div>
                 </div>
-                <!--Fim do primeiro card-->
 
-                <!-- Segundo card-->
                 <div class="card-item">
                     <img src="img/lucas-ribeiro.jpg" alt="Lucas Ribeiro">
-                    <p class="nome-user">Lucas Ribeiro, 34 anos, Analista de Sistemas</p>
-                    <p class="depoimento-user">Com a correria do dia a dia, acabava comendo qualquer coisa. Desde que comecei a comprar o plano semanal da OpenFit, percebi uma grande diferença no meu bem-estar. As refeições são deliciosas e super práticas! O melhor é que sei que estou cuidando da minha saúde, sem perder tempo na cozinha.
-                    </p>
+                    <p class="nome-user" data-i18n="index_testimonial_2_name">Lucas Ribeiro, 34 years old, Systems Analyst</p>
+                    <p class="depoimento-user" data-i18n="index_testimonial_2_text">With the daily rush, I ended up eating anything. Since I started buying the weekly plan from OpenFit, I noticed a big difference in my well-being. The meals are delicious and super practical! The best part is knowing I'm taking care of my health without wasting time in the kitchen.</p>
                     <div class="estrela">
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
@@ -108,14 +104,11 @@
                         <i class="fa-solid fa-star"></i>
                     </div>
                 </div>
-                <!--Fim do segundo card-->  
 
-                <!-- terceiro card-->
                 <div class="card-item">
                     <img src="img/carolina-mendes-perfil.jpg" alt="Carolina Mendes">
-                    <p class="nome-user">Carolina Mendes, 40 anos, Empresária</p>
-                    <p class="depoimento-user">Sempre tive dificuldade em manter uma alimentação saudável por falta de tempo e habilidade na cozinha. A OpenFit resolveu esse problema com o plano mensal, e hoje não preciso mais me preocupar com o que vou comer. As refeições são incríveis, equilibradas e super saborosas. Melhor escolha que fiz!
-                    </p>
+                    <p class="nome-user" data-i18n="index_testimonial_3_name">Carolina Mendes, 40 years old, Businesswoman</p>
+                    <p class="depoimento-user" data-i18n="index_testimonial_3_text">I always struggled to maintain a healthy diet due to lack of time and cooking skills. OpenFit solved this problem with the monthly plan, and now I no longer worry about what I'll eat. The meals are incredible, balanced, and super tasty. Best choice I ever made!</p>
                     <div class="estrela">
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
@@ -124,13 +117,11 @@
                         <i class="fa-solid fa-star-half"></i>
                     </div>
                 </div>
-                <!--Fim do terceiro card-->
             </div>
 
         </div>
 
     </section>
-   <!--Rodapé-->
    <footer class="footer">
         <div class="container">
             <div class="links">
@@ -138,12 +129,12 @@
                 <a href="https://github.com/gustavofjacome"><i class="fa-brands fa-github"></i></a>
                 <a href="https://www.linkedin.com/in/gustavofjacome"><i class="fa-brands fa-linkedin"></i></a>
             </div>
-            <p>Desenvolvido por Gustavo Jácome</p>
+            <p data-i18n="footer_credit">Developed by Gustavo Jácome</p>
 
         </div>
 
    </footer>
-   <!--FIM Rodapé-->
-      
+
+   <script src="js/translations.js"></script>
 </body>
 </html>

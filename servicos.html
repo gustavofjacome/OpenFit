@@ -1,130 +1,110 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css"/>
-    <title>Serviços | OpenFit</title>
+    <title data-i18n="services_page_title">Services | OpenFit</title>
 </head>
 
 <body>
-    <header style="background-image: url(img/servicos.jpg);">
+    <header class="inner-page" style="background-image: url(img/servicos.jpg);">
         <div class="container">
             <nav>
                 <a href="index.html">
                     <img src="img/logo principal png.png" alt="Logo">
                 </a>
                 <ul class="ul">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="sobre.html">Sobre</a></li>
-                    <li><a href="servicos.html">Serviços</a></li>
-                    <li><a href="trabalhe.html">Trabalhe Conosco</a></li>
-                    <li><a class="btn" href="contato.html">Contato</a></li>
+                    <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+                    <li><a href="sobre.html" data-i18n="nav_about">About</a></li>
+                    <li><a href="servicos.html" data-i18n="nav_services">Services</a></li>
+                    <li><a href="trabalhe.html" data-i18n="nav_work">Work With Us</a></li>
+                    <li><a class="nav-contact" href="contato.html" data-i18n="nav_contact">Contact</a></li>
+                    <li><button id="lang-toggle" onclick="toggleLanguage()">PT</button></li>
                 </ul>
-                <div class="menu-icon"></div>
+                <div class="menu-icon"><i class="fa-solid fa-bars"></i></div>
             </nav>
             <section class="banner">
                 <div class="banner-text">
-                    <h1>Serviços</h1>
+                    <h1 data-i18n="services_title">Services</h1>
                 </div>
             </section>
         </div>
     </header>
     <section class="servicos">
         <div class="container">
-            <h3>Nossos Serviços</h3>
-            <p>Conheçam nossos melhores produtos e serviços para você</p>
-            <!-- all cards-->
+            <h3 data-i18n="services_section_title">Our Services</h3>
+            <p data-i18n="services_section_subtitle">Check out our best products and services for you</p>
             <div class="rows-cards">
-                <!--Primeiro card-->
                 <div class="rows-cards-item">
-                    <img src="img/topic-1.png" alt="primeiro topico">
-                    <p = class="nome-servico"><strong>Marmitas Personalizadas</strong></p>
-                    <p class="descricao-servico">Marmitas adaptadas às suas necessidades nutricionais, com opções para onívoros, vegetarianos e veganos.</p>
+                    <img src="img/topic-1.png" alt="first topic">
+                    <p class="nome-servico"><strong data-i18n="services_card_1_title">Personalized Meals</strong></p>
+                    <p class="descricao-servico" data-i18n="services_card_1_desc">Meals adapted to your nutritional needs, with options for omnivores, vegetarians, and vegans.</p>
                 </div>
-                <!--Fim do primeiro card-->
-                <!--Segundo card-->
                 <div class="rows-cards-item">
-                    <img src="img/topic-2.png" alt="segundo topico">
-                    <p = class="nome-servico"><strong>Planos e Preços Acessíveis</strong></p>
-                    <p class="descricao-servico">Oferecemos planos semanais e mensais com descontos, garantindo refeições balanceadas a partir de R$50,00 por semana.</p>
+                    <img src="img/topic-2.png" alt="second topic">
+                    <p class="nome-servico"><strong data-i18n="services_card_2_title">Affordable Plans and Prices</strong></p>
+                    <p class="descricao-servico" data-i18n="services_card_2_desc">We offer weekly and monthly plans with discounts, ensuring balanced meals from R$50.00 per week.</p>
                 </div>
-                <!--Fim do segundo card-->
-                <!--Terceiro card-->
                 <div class="rows-cards-item">
-                    <img src="img/topic-3.png" alt="terceiro topico">
-                    <p = class="nome-servico"><strong>Sustentabilidade</strong></p>
-                    <p class="descricao-servico">Utilizamos embalagens retornáveis e incentivamos a reciclagem para reduzir o impacto ambiental.</p>
+                    <img src="img/topic-3.png" alt="third topic">
+                    <p class="nome-servico"><strong data-i18n="services_card_3_title">Sustainability</strong></p>
+                    <p class="descricao-servico" data-i18n="services_card_3_desc">We use returnable packaging and encourage recycling to reduce environmental impact.</p>
                 </div>
-                <!--Fim do Terceiro card-->
-                <!--Quarto card-->
                 <div class="rows-cards-item">
-                    <img src="img/topic-4.png" alt="quarto topico">
-                    <p = class="nome-servico"><strong>Entrega Rápida e Segura</strong></p>
-                    <p class="descricao-servico">Entregamos suas refeições na sua porta, sempre frescas e no horário combinado.</p>
+                    <img src="img/topic-4.png" alt="fourth topic">
+                    <p class="nome-servico"><strong data-i18n="services_card_4_title">Fast and Safe Delivery</strong></p>
+                    <p class="descricao-servico" data-i18n="services_card_4_desc">We deliver your meals to your door, always fresh and on time.</p>
                 </div>
-                <!--Fim do Quarto card-->
-                <!--Quinto card-->
                 <div class="rows-cards-item">
-                    <img src="img/topic-5.png" alt="quinto topico">
-                    <p = class="nome-servico"><strong>Cardápio Variado e Nutritivo</strong></p>
-                    <p class="descricao-servico">Um menu equilibrado que é atualizado regularmente para oferecer opções saborosas e nutritivas.</p>
+                    <img src="img/topic-5.png" alt="fifth topic">
+                    <p class="nome-servico"><strong data-i18n="services_card_5_title">Varied and Nutritious Menu</strong></p>
+                    <p class="descricao-servico" data-i18n="services_card_5_desc">A balanced menu that is regularly updated to offer tasty and nutritious options.</p>
                 </div>
-                <!--Fim do Quinto card-->
-                <!--Sexto card-->
                 <div class="rows-cards-item">
-                    <img src="img/topic-6.png" alt="sexto topico">
-                    <p = class="nome-servico"><strong>Suporte Nutricional</strong></p>
-                    <p class="descricao-servico">Conte com a orientação de nossos nutricionistas para escolher o plano que melhor se adapta aos seus objetivos.</p>
+                    <img src="img/topic-6.png" alt="sixth topic">
+                    <p class="nome-servico"><strong data-i18n="services_card_6_title">Nutritional Support</strong></p>
+                    <p class="descricao-servico" data-i18n="services_card_6_desc">Count on the guidance of our nutritionists to choose the plan that best suits your goals.</p>
                 </div>
-                <!--Fim do Sexto card-->
             </div>
-            <!-- end all cards-->
         </div>
 
     </section>
-    <!-- fim de serviços -->
-    <!-- dados--> 
     <section class="dados">
         <div class="container">
-            <!-- dados item-->
             <div class="dados-item">
-                <img src="img/dado-1.png" alt="dado-1">
+                <img src="img/dado-1.png" alt="data 1">
                 <p>
-                    <strong>+1.500</strong> <br>
-                    Clientes Atendidos
+                    <strong>+1,500</strong> <br>
+                    <span data-i18n="services_data_1">Clients Served</span>
                 </p>
             </div>
             <div class="dados-item">
-                <img src="img/dado-2.png" alt="dado-2">
+                <img src="img/dado-2.png" alt="data 2">
                 <p>
-                    <strong>+3.000</strong> <br>
-                    Refeições Entregues por Semana
+                    <strong>+3,000</strong> <br>
+                    <span data-i18n="services_data_2">Meals Delivered per Week</span>
                 </p>
             </div>
             <div class="dados-item">
-                <img src="img/dado-3.png" alt="dado-3">
+                <img src="img/dado-3.png" alt="data 3">
                 <p>
                     <strong>80%</strong> <br>
-                    Redução de plástico
+                    <span data-i18n="services_data_3">Plastic Reduction</span>
                 </p>
             </div>
             <div class="dados-item">
-                <img src="img/dado-4.png" alt="dado-4">
+                <img src="img/dado-4.png" alt="data 4">
                 <p>
                     <strong>97%</strong> <br>
-                    Clientes Satisfeitos
+                    <span data-i18n="services_data_4">Satisfied Clients</span>
                 </p>
             </div>
             
         </div>
             
-        <!-- fim dados item-->
-        
      </section>
-    <!-- fim dados-->
-   <!--Rodapé-->
    <footer class="footer">
         <div class="container">
             <div class="links">
@@ -132,12 +112,12 @@
                 <a href="https://github.com/gustavofjacome"><i class="fa-brands fa-github"></i></a>
                 <a href="https://www.linkedin.com/in/gustavofjacome"><i class="fa-brands fa-linkedin"></i></a>
             </div>
-            <p>Desenvolvido por Gustavo Jácome</p>
+            <p data-i18n="footer_credit">Developed by Gustavo Jácome</p>
 
         </div>
 
    </footer>
-   <!--FIM Rodapé-->
-      
+       
+   <script src="js/translations.js"></script>
 </body>
 </html>
